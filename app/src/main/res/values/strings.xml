@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="titleText">First of the few steps to set you up with a Bank Account</string>
+    <string name="learnMore">Providing PAN &amp; Date of Birth helps us find and fetch your KYC from a central registry by the Government of India. <font color="#3F51B5">Learn more</font></string>
+</resources>
