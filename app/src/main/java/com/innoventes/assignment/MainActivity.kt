@@ -11,6 +11,10 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
 import com.innoventes.assignment.databinding.ActivityMainBinding
 import com.innoventes.assignment.viewModel.UserDetailsViewModel
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity(), View.OnClickListener{
 
@@ -52,6 +56,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
             binding.nextButton.isEnabled = isEnabled
         }
 
+        CoroutineScope(Dispatchers.Main).launch {
+        }
 
         binding.iHaveNoPanTextView.setOnClickListener(this)
         binding.tvDate.setOnClickListener(this)
